@@ -4,13 +4,13 @@ tmp1 <- read.table("train/X_train.txt")
 tmp2 <- read.table("test/X_test.txt")
 X <- rbind(tmp1, tmp2)
 
-tmp1 <- read.table("train/subject_train.txt")
-tmp2 <- read.table("test/subject_test.txt")
-S <- rbind(tmp1, tmp2)
+tmp3 <- read.table("train/subject_train.txt")
+tmp4 <- read.table("test/subject_test.txt")
+S <- rbind(tmp3, tmp4)
 
-tmp1 <- read.table("train/y_train.txt")
-tmp2 <- read.table("test/y_test.txt")
-Y <- rbind(tmp1, tmp2)
+tmp5 <- read.table("train/y_train.txt")
+tmp6 <- read.table("test/y_test.txt")
+Y <- rbind(tmp5, tmp6)
 
 # 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
